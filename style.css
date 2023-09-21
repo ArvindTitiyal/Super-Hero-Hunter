@@ -1,0 +1,188 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(121, 35, 201); /* Brown background color for the entire page */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000; /* Dark black background color */
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+.logo {
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    text-shadow: 2px 2px #000;
+    cursor: pointer;
+    letter-spacing: 2px; /* Increased letter spacing for a stylish look */
+}
+
+.logo-letter {
+    color: orange; /* Customize the colors as needed */
+}
+
+.nav-button {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    background: transparent; /* Transparent background */
+    transition: color 0.3s;
+}
+
+.nav-button:hover {
+    color: lightblue; /* Change text color on hover */
+}
+
+.search-input {
+    padding: 10px 15px; /* Adjust padding for a rectangular shape */
+    border: none;
+    background-color: #333; /* Darker background color */
+    color: #fff;
+    margin-left: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* Add border-radius for a rounded rectangle */
+    width: 200px; /* Set a fixed width for the input */
+    outline: none; /* Remove the default focus outline */
+}
+
+.search-input::placeholder {
+    color: #ccc; /* Placeholder text color */
+}
+
+.search-input:focus {
+    background-color: #555; /* Darker background on focus */
+    color: #fff;
+}
+
+/* Responsive Navbar Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-button {
+        padding: 8px 15px;
+        font-size: 16px;
+        margin-left: 8px;
+    }
+
+    .search-input {
+        margin-left: 8px;
+    }
+}
+
+/* Card Styles */
+#app {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 20px;
+    background-color: ivory;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 98%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card-img:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-description {
+    font-size: 16px;
+    text-align: justify;
+    margin: 20px;
+    margin-bottom: 30px;
+    height: 80px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-actions a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.card-actions a:hover {
+    color: blue;
+}
+
+.card-actions button {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-actions button:hover {
+    background-color: #fff;
+    color: blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
